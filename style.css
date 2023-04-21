@@ -1,0 +1,405 @@
+ /* button styling  */
+button.btn1 {
+  background-color: white; 
+  border-color: grey;
+  border-radius: 25px;
+  color: black;
+  padding: 3px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  box-shadow: 0 4px #999;
+  font-family: arial;
+}
+
+button.btn2{
+  background-color: black; 
+  border-color: grey;
+  border-radius: 25px;
+  color: white;
+  padding: 3px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  box-shadow: 0 4px #999;
+  font-family: arial;
+}
+.buttons{
+  display: inline-block; 
+  float:right;
+  padding: 9px; 
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:100;
+  right:0;
+}
+/* changing what each button does when pressed */
+.default {
+  background-color: white;
+  color:black;
+}
+.darkMode {
+  background-color: black;
+  color:white;
+}
+
+
+
+/* default background colour */
+body{
+  background-color: white;
+  
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color:black
+}
+
+
+h1.title{
+  font-size:40px;
+  display: inline-block; 
+  padding-left: 20px;
+  font-family:georgia;
+  color:black;
+  position:fixed;
+}
+.logo{
+  float:;
+  display:inline;
+  margin-left:55px;
+  width:100px
+}
+
+.header{
+    padding:10px;
+    width:100%;
+    height:110px;
+    display:inline-block; 
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:lightgrey
+}
+.burgerMenu{
+  font-size:30px;
+  cursor:pointer;
+  margin-left: 10px;
+  margin-top: 30px;
+  position:fixed; 
+}
+
+/*span.bar{display:inline-block;background-color:lightgrey; height:10px;width:100%}*/
+
+
+.intro {
+    text-align:left; 
+    display: inline-block;
+    font-size:15px;
+    float: left; 
+    width:100%;
+    height: 500px;
+    font-family:Georgia; 
+    margin-top:130px;
+}
+
+.big-image{
+  width:100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image-text{
+  font-family:Helvetica;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  
+}
+
+.recipe-flex {
+  margin: 15px auto 0 auto;
+  margin-top: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center
+
+  
+}
+
+.box {
+  margin: 15px auto 0 auto;
+  color: white;
+  width: 400px;
+}
+
+.container2 {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    width:500px;
+    padding: 20px;
+  
+}
+
+.text{
+  text-align:left;
+  padding-left:0px;
+  font-family:Helvetica;
+  font-weight: bold;
+  
+}
+
+.row {
+
+  display: flex;
+  margin-top:120px;
+  flex-flow: row wrap;
+  font-family:Georgia;
+  float:left;
+  padding-left: 50px;
+  margin-right: 50px;
+  width:50%
+}
+
+
+h2.recipeName {
+  width:100%;
+  padding:10px;
+}
+.recipe{
+  width:500px;
+  height:400px;
+  float:left;
+  margin-right:100%;
+  padding-bottom: 15px;
+  
+}
+.section1{
+  width:100%;
+
+}
+
+.flex-container{
+padding: 0;
+margin: 0;
+list-style: none;
+display: flex;
+flex-flow: row wrap;
+justify-content: space-evenly;
+}
+
+.flex-item{
+background: lightgrey ;
+padding-top: 20px ;
+width: 80px ;
+height: 50px ;
+margin-bottom: 10px ;
+margin-right:5px;
+color: black;
+font-size: 14px ;
+text-align: center ;
+}
+
+
+/* navigation list properties */
+
+
+.navbar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index:9999
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: lightgray;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: lightgrey;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+.column.main{
+  font-size: 17px
+}
+
+/* media screen properties */
+
+@media screen and (min-width:560px) {.intro{
+    font-size:21px}}
+
+/*@media screen and (max-width:400px) {.intro{margin-top:150px}}*/
+
+@media only screen and (min-width:560px) {
+         #ingredientsName{display: none;}
+}
+
+@media only screen and (max-width:650px) {
+         #logo{display:none;}
+         #title{padding-left:60px;}
+}
+@media screen and (max-width:560px) {
+  .recipe{
+    width:300px;
+    height:200px;
+    overflox-x:hidden;
+  }
+}
+@media screen and (max-width:560px) {
+  .row{
+    width:100%;
+    padding-left:15px;
+    padding-right:15px;
+  }
+}
+@media screen and (max-width:560px) {
+
+.dropdown{
+  flex:50%;
+  margin-top:20px;
+  position: relative;
+  display: inline-block;
+  font-size:17px;
+}
+
+.ingredientsName{
+  border:solid;
+  border-color:lightgrey;
+  border-radius:10px;
+  padding:5px;
+  text-align: center;
+  box-shadow: 0 2px grey;
+ 
+}
+  
+.column.side{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+
+.dropdown:hover .column.side{
+  display: block;
+
+}
+}
+
+/*@media only screen and (max-width:400px) {
+         #ingredients {display: none;}
+}*/
+
+h2.feedback{
+  margin-top:130px;
+  padding-top:10px;
+  padding-left:15px;
+  font-family:georgia;
+}
+p.feedback{
+  padding-left:15px;
+  font-family:georgia;
+}
+
+/* This Styling was taken from https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: grey;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: lightgrey;
+  color:black
+}
+
+
+.container {
+  margin-top:10px;
+  margin-left:10px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width:600px;
+  
+}
+
+textarea{
+  height:200px;
+}
